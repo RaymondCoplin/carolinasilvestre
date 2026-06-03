@@ -155,11 +155,15 @@
 <!-- Navigation -->
 <header class="fixed top-0 w-full z-50 flex justify-between items-center px-page-margin-x py-8 transition-all duration-500 ease-in-out border-b border-outline-variant/30" id="main-nav">
 <div class="font-headline-sm text-headline-sm tracking-tighter text-on-surface">CS</div>
-<nav class="hidden md:flex gap-8 items-center">
-<a class="font-label-caps text-label-caps text-secondary hover:text-on-surface transition-colors" href="#biografia">BIOGRAFÍA</a>
-<a class="font-label-caps text-label-caps text-secondary hover:text-on-surface transition-colors" href="#trayectoria">TRAYECTORIA</a>
-<a class="font-label-caps text-label-caps text-secondary hover:text-on-surface transition-colors" href="#proyectos">PROYECTOS</a>
-<a class="font-label-caps text-label-caps text-secondary hover:text-on-surface transition-colors" href="#contacto">CONTACTO</a>
+<nav class="hidden md:flex gap-6 items-center">
+<a class="font-label-caps text-label-caps text-secondary hover:text-on-surface transition-colors" href="#biografia" data-en="BIOGRAPHY">BIOGRAFÍA</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-on-surface transition-colors" href="#servicios" data-en="SERVICES">SERVICIOS</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-on-surface transition-colors" href="#producciones" data-en="PRODUCTIONS">PRODUCCIONES</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-on-surface transition-colors" href="#fundacion" data-en="FOUNDATION">FUNDACIÓN</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-on-surface transition-colors" href="#gala">THE GALA</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-on-surface transition-colors" href="#formacion" data-en="TRAINING CENTER">CENTRO DE FORMACIÓN</a>
+<a class="font-label-caps text-label-caps text-secondary hover:text-on-surface transition-colors" href="#contacto" data-en="CONTACT">CONTACTO</a>
+<button id="lang-toggle" class="font-label-caps text-label-caps text-secondary hover:text-on-surface transition-colors ml-4">EN</button>
 </nav>
 <button id="menu-toggle" class="md:hidden p-1" aria-label="Abrir menú" onclick="toggleMobileMenu()">
 <span id="menu-icon" class="material-symbols-outlined" style="font-size: 2rem;">menu</span>
@@ -167,10 +171,14 @@
 </header>
 <!-- Mobile Menu Overlay -->
 <div id="mobile-menu" class="fixed inset-0 z-40 bg-background flex flex-col justify-center items-center gap-10 md:hidden">
-<a class="font-headline-md text-headline-md text-on-surface hover:text-accent transition-colors" href="#biografia" onclick="closeMobileMenu()">BIOGRAFÍA</a>
-<a class="font-headline-md text-headline-md text-on-surface hover:text-accent transition-colors" href="#trayectoria" onclick="closeMobileMenu()">TRAYECTORIA</a>
-<a class="font-headline-md text-headline-md text-on-surface hover:text-accent transition-colors" href="#proyectos" onclick="closeMobileMenu()">PROYECTOS</a>
-<a class="font-headline-md text-headline-md text-on-surface hover:text-accent transition-colors" href="#contacto" onclick="closeMobileMenu()">CONTACTO</a>
+<a class="font-headline-md text-headline-md text-on-surface hover:text-accent transition-colors" href="#biografia" onclick="closeMobileMenu()" data-en="BIOGRAPHY">BIOGRAFÍA</a>
+<a class="font-headline-md text-headline-md text-on-surface hover:text-accent transition-colors" href="#servicios" onclick="closeMobileMenu()" data-en="SERVICES">SERVICIOS</a>
+<a class="font-headline-md text-headline-md text-on-surface hover:text-accent transition-colors" href="#producciones" onclick="closeMobileMenu()" data-en="PRODUCTIONS">PRODUCCIONES</a>
+<a class="font-headline-md text-headline-md text-on-surface hover:text-accent transition-colors" href="#fundacion" onclick="closeMobileMenu()" data-en="FOUNDATION">FUNDACIÓN</a>
+<a class="font-headline-md text-headline-md text-on-surface hover:text-accent transition-colors" href="#gala" onclick="closeMobileMenu()">THE GALA</a>
+<a class="font-headline-md text-headline-md text-on-surface hover:text-accent transition-colors" href="#formacion" onclick="closeMobileMenu()" data-en="TRAINING CENTER">CENTRO DE FORMACIÓN</a>
+<a class="font-headline-md text-headline-md text-on-surface hover:text-accent transition-colors" href="#contacto" onclick="closeMobileMenu()" data-en="CONTACT">CONTACTO</a>
+<button id="lang-toggle-mobile" class="font-label-caps text-label-caps text-secondary hover:text-on-surface transition-colors mt-4">EN</button>
 </div>
 <!-- Hero Section -->
 <section class="relative min-h-screen flex flex-col justify-end pt-32 pb-16 px-page-margin-x">
@@ -179,8 +187,8 @@
 <h1 class="font-display-hero text-display-hero uppercase reveal-text">
                     CAROLINA<br/>SILVESTRE
                 </h1>
-<p class="mt-stack-md font-label-caps text-label-caps text-accent tracking-[0.2em] reveal-sub">
-                    DIRECTORA ARTÍSTICA · COREÓGRAFA · DOMÍNICO-SUIZA
+<p class="mt-stack-md font-label-caps text-label-caps text-accent tracking-[0.2em] reveal-sub" data-en="CREATIVE DIRECTOR · ARTISTIC PRODUCER">
+                    DIRECTORA CREATIVA · PRODUCTORA ARTÍSTICA
                 </p>
 </div>
 <div class="md:col-span-4 mt-12 md:mt-0 flex flex-col items-end">
@@ -195,30 +203,275 @@
 </section>
 <!-- Bio Section -->
 <section class="py-section-gap px-page-margin-x max-w-[1600px] mx-auto" id="biografia">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-<div class="md:col-span-3">
-<span class="font-label-caps text-label-caps text-accent">INTRODUCCIÓN</span>
+<!-- Introducción — fila completa -->
+<div class="mb-16 space-y-8 reveal-text">
+<span class="font-label-caps text-label-caps text-accent" data-en="INTRODUCTION">INTRODUCCIÓN</span>
+<p class="font-headline-md text-headline-md leading-tight max-w-3xl" data-en="Dance is a language of silence and precision, a constant choreography between gravity and the spirit.">La danza es un lenguaje de silencio y precisión, una coreografía constante entre la gravedad y el espíritu.</p>
+<div class="space-y-4 font-body-lg text-body-lg text-secondary max-w-2xl">
+<p data-en="With over 25 years of international experience, Carolina Silvestre has built a career defined by technical excellence and an avant-garde artistic vision.">Con más de 25 años de trayectoria internacional, Carolina Silvestre ha consolidado una carrera definida por la excelencia técnica y una visión artística vanguardista.</p>
+<p data-en="As Artistic Director and Choreographer, her work transcends the stage to become a cultural bridge between Switzerland and the Dominican Republic.">Como Directora Artística y Coreógrafa, su labor trasciende el escenario para convertirse en un puente cultural entre Suiza y la República Dominicana.</p>
 </div>
-<div class="md:col-span-7 md:col-start-5 space-y-stack-lg">
-<p class="font-headline-md text-headline-md leading-tight reveal-text">
-                    La danza es un lenguaje de silencio y precisión, una coreografía constante entre la gravedad y el espíritu.
-                </p>
-<div class="space-y-6 text-body-lg font-body-lg text-secondary reveal-text">
-<p>
-                        Con más de 25 años de trayectoria internacional, Carolina Silvestre ha consolidado una carrera definida por la excelencia técnica y una visión artística vanguardista. Su formación en centros europeos de prestigio le ha permitido fusionar la disciplina clásica con la libertad contemporánea.
-                    </p>
-<p>
-                        Como Directora Artística y Coreógrafa, su labor trasciende el escenario para convertirse en un puente cultural entre Suiza y la República Dominicana, impulsando proyectos que redefinen el panorama del ballet en el Caribe a través de la educación y la producción de alto nivel.
-                    </p>
+</div>
+<!-- Trayectoria + Formación — 2 columnas -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter pt-16">
+<!-- Trayectoria -->
+<div class="space-y-4 reveal-text">
+<span class="font-label-caps text-label-caps text-accent" data-en="TRAJECTORY">TRAYECTORIA</span>
+<div class="flex flex-col border-t border-outline-variant/20 mt-2">
+<div class="py-5 border-b border-outline-variant/20">
+<span class="font-label-caps text-label-caps text-accent text-[10px]">FRANCIA</span>
+<p class="font-headline-sm text-headline-sm mt-1">Cannes Jeune Ballet</p>
+<p class="font-body-md text-secondary text-sm">Rosella Hightower</p>
+</div>
+<div class="py-5 border-b border-outline-variant/20">
+<span class="font-label-caps text-label-caps text-accent text-[10px]">SUIZA</span>
+<p class="font-headline-sm text-headline-sm mt-1">Cinevox Dance Company</p>
+<p class="font-body-md text-secondary text-sm">Tanzhaus Zürich</p>
+</div>
+<div class="py-5 border-b border-outline-variant/20">
+<span class="font-label-caps text-label-caps text-accent text-[10px]">ITALIA</span>
+<p class="font-headline-sm text-headline-sm mt-1">Teatro di San Carlo</p>
+<p class="font-body-md text-secondary text-sm">Napoli</p>
+</div>
+<div class="py-5 border-b border-outline-variant/20">
+<span class="font-label-caps text-label-caps text-accent text-[10px]">LIECHTENSTEIN</span>
+<p class="font-headline-sm text-headline-sm mt-1">TAK Theater</p>
+<p class="font-body-md text-secondary text-sm">Schaan</p>
+</div>
+<div class="py-5 border-b border-outline-variant/20">
+<span class="font-label-caps text-label-caps text-accent text-[10px]">R. DOMINICANA</span>
+<p class="font-headline-sm text-headline-sm mt-1">Ballet Nacional Dominicano</p>
+<p class="font-body-md text-secondary text-sm">Solista</p>
+</div>
+</div>
+</div>
+<!-- Formación -->
+<div class="space-y-4 reveal-text">
+<span class="font-label-caps text-label-caps text-accent" data-en="TRAINING">FORMACIÓN</span>
+<div class="flex flex-col border-t border-outline-variant/20 mt-2">
+<div class="py-5 border-b border-outline-variant/20">
+<span class="font-label-caps text-label-caps text-accent text-[10px]" data-en="MASTER'S DEGREE">MAESTRÍA</span>
+<p class="font-headline-sm text-headline-sm mt-1" data-en="Dance and Performing Arts">Danza y Artes Escénicas</p>
+<p class="font-body-md text-secondary text-sm">Universidad Internacional de La Rioja (UNIR)</p>
+</div>
+<div class="py-5 border-b border-outline-variant/20">
+<span class="font-label-caps text-label-caps text-accent text-[10px]" data-en="LEADERSHIP">LIDERAZGO</span>
+<p class="font-headline-sm text-headline-sm mt-1" data-en="Strategic Leadership">Liderazgo Estratégico</p>
+<p class="font-body-md text-secondary text-sm">Universidad Complutense de Madrid</p>
+</div>
+<div class="py-5 border-b border-outline-variant/20">
+<span class="font-label-caps text-label-caps text-accent text-[10px]" data-en="COMMUNICATION">COMUNICACIÓN</span>
+<p class="font-headline-sm text-headline-sm mt-1" data-en="Social Communication">Comunicación Social</p>
+<p class="font-body-md text-secondary text-sm">Pontificia Universidad Católica Madre y Maestra</p>
+</div>
+<div class="py-5 border-b border-outline-variant/20">
+<span class="font-label-caps text-label-caps text-accent text-[10px]">COACHING</span>
+<p class="font-headline-sm text-headline-sm mt-1">Art en Coaching Training</p>
+<p class="font-body-md text-secondary text-sm">Zürich, Switzerland</p>
+</div>
+<div class="py-5 border-b border-outline-variant/20">
+<span class="font-label-caps text-label-caps text-accent text-[10px]" data-en="PROFESSIONAL TRAINING">FORMACIÓN PROFESIONAL</span>
+<p class="font-headline-sm text-headline-sm mt-1">L'École Supérieure de Danse</p>
+<p class="font-body-md text-secondary text-sm">Rosella Hightower, Cannes, Francia</p>
+</div>
 </div>
 </div>
 </div>
 </section>
-<!-- Trajectory Section -->
-<section class="py-section-gap bg-primary text-background px-page-margin-x" id="trayectoria">
+<!-- Servicios Section -->
+<section class="py-section-gap bg-primary text-background px-page-margin-x" id="servicios">
 <div class="max-w-[1600px] mx-auto">
 <div class="mb-24">
-<span class="font-label-caps text-label-caps text-accent">TRAYECTORIA</span>
+<span class="font-label-caps text-label-caps text-accent" data-en="SERVICES">SERVICIOS</span>
+<h2 class="font-headline-lg text-headline-lg mt-4">CS Production</h2>
+<p class="font-label-caps text-label-caps opacity-40 mt-4 tracking-[0.2em]" data-en="ARTISTIC PRODUCTIONS FOR CORPORATE EVENTS">PRODUCCIONES ARTÍSTICAS PARA EVENTOS EMPRESARIALES</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="reveal-text space-y-8">
+<p class="font-body-lg opacity-80" data-en="We create exclusive experiences under standards of excellence and innovation, for private and corporate events:">Creamos experiencias exclusivas bajo estándares de excelencia e innovación, para eventos privados y corporativos:</p>
+<ul class="space-y-0">
+<li class="flex items-center gap-6 border-b border-background/10 py-6"><span class="text-accent">—</span><span class="font-body-lg opacity-80" data-en="Theater, opera and dance productions">Obras de teatro, ópera y danza</span></li>
+<li class="flex items-center gap-6 border-b border-background/10 py-6"><span class="text-accent">—</span><span class="font-body-lg opacity-80" data-en="Product launches">Lanzamientos</span></li>
+<li class="flex items-center gap-6 border-b border-background/10 py-6"><span class="text-accent">—</span><span class="font-body-lg opacity-80" data-en="Inaugurations">Inauguraciones</span></li>
+<li class="flex items-center gap-6 border-b border-background/10 py-6"><span class="text-accent">—</span><span class="font-body-lg opacity-80" data-en="Award ceremonies">Premiaciones</span></li>
+<li class="flex items-center gap-6 py-6"><span class="text-accent">—</span><span class="font-body-lg opacity-80" data-en="Recitals">Recitales</span></li>
+</ul>
+<a href="#contacto" class="inline-block mt-8 px-10 py-5 bg-accent text-primary font-label-caps text-label-caps hover:bg-white transition-colors" data-en="REQUEST INFORMATION">SOLICITAR INFORMACIÓN</a>
+</div>
+</div>
+<!-- Producciones -->
+<div class="mt-section-gap pt-section-gap border-t border-background/20" id="producciones">
+<span class="font-label-caps text-label-caps text-accent" data-en="PRODUCTIONS">PRODUCCIONES</span>
+<!-- Paradiso -->
+<div class="mt-16 grid grid-cols-1 md:grid-cols-12 gap-gutter items-center reveal-text">
+<div class="md:col-span-5 order-2 md:order-1 space-y-6">
+<span class="font-label-caps text-label-caps text-accent opacity-50" data-en="DEC 9, 2023 · PUNTA CANA">9 DIC 2023 · PUNTA CANA</span>
+<h3 class="font-headline-lg text-headline-lg leading-tight">Paradiso</h3>
+<p class="font-body-lg opacity-70" data-en="An environmental spectacular fusing music, dance and theater with over 50 artists on stage. Inspired by <em>The Little Prince</em>, a call to environmental awareness — in four acts: water, earth, air and fire.">Espectáculo medioambientalista que fusiona música, danza y teatro con más de 50 artistas en escena. Inspirado en <em>El Principito</em>, un llamado a la conciencia sobre la preservación del planeta — en cuatro actos: agua, tierra, aire y fuego.</p>
+<div class="pt-6 border-t border-background/20">
+<p class="font-headline-lg text-headline-lg text-accent leading-none" style="font-size:clamp(3rem,6vw,5rem)">350<span class="text-[0.5em] align-top mt-2 inline-block">+</span></p>
+<p class="font-label-caps text-label-caps opacity-50 mt-2" data-en="ATTENDEES">ESPECTADORES</p>
+</div>
+<div class="flex gap-10 pt-6 border-t border-background/20">
+<div>
+<p class="font-label-caps text-label-caps text-accent text-[10px]" data-en="VENUE">LUGAR</p>
+<p class="font-body-md opacity-60 mt-1">Teatro Lopesan Costa Bávaro</p>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-accent text-[10px]" data-en="CAST">ELENCO</p>
+<p class="font-body-md opacity-60 mt-1">+50 artistas</p>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-accent text-[10px]" data-en="DURATION">DURACIÓN</p>
+<p class="font-body-md opacity-60 mt-1">1h 30min</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-6 md:col-start-7 order-1 md:order-2 overflow-hidden">
+<video class="w-full aspect-video object-cover autoplay-video" controls preload="none" muted playsinline loop>
+<source src="videos/Paradiso.mp4" type="video/mp4"/>
+</video>
+</div>
+</div>
+<!-- Vivaldi's Concerto -->
+<div class="mt-section-gap grid grid-cols-1 md:grid-cols-12 gap-gutter items-center reveal-text">
+<div class="md:col-span-6 overflow-hidden">
+<video class="w-full aspect-video object-cover autoplay-video" controls preload="none" muted playsinline loop>
+<source src="videos/Vivaldi's%20Concerto.mp4" type="video/mp4"/>
+</video>
+</div>
+<div class="md:col-span-5 md:col-start-8 space-y-6">
+<h3 class="font-headline-lg text-headline-lg leading-tight">Vivaldi's Concerto</h3>
+<p class="font-body-lg opacity-70" data-en="A production celebrating the legacy of Antonio Vivaldi through classical and contemporary dance, under the artistic direction of Carolina Silvestre.">Una producción que celebra el legado de Antonio Vivaldi a través de la danza clásica y contemporánea, bajo la dirección artística de Carolina Silvestre.</p>
+<div class="pt-6 border-t border-background/20">
+<p class="font-headline-lg text-headline-lg text-accent leading-none" style="font-size:clamp(3rem,6vw,5rem)">250<span class="text-[0.5em] align-top mt-2 inline-block">+</span></p>
+<p class="font-label-caps text-label-caps opacity-50 mt-2" data-en="ATTENDEES">ESPECTADORES</p>
+</div>
+<div class="pt-6 border-t border-background/20">
+<p class="font-label-caps text-label-caps text-accent text-[10px]" data-en="ARTISTIC DIRECTION">DIRECCIÓN ARTÍSTICA</p>
+<p class="font-body-md opacity-60 mt-1">Carolina Silvestre</p>
+</div>
+</div>
+</div>
+<!-- Love Story -->
+<div class="mt-section-gap grid grid-cols-1 md:grid-cols-12 gap-gutter items-center reveal-text">
+<div class="md:col-span-5 order-2 md:order-1 space-y-6">
+<h3 class="font-headline-lg text-headline-lg leading-tight">Love Story</h3>
+<p class="font-body-lg opacity-70" data-en="A creation that explores human sensitivity and affection. The dramaturgical narrative delves into elements such as play, caress and encounter, inviting the audience to reflect on love and interpersonal relationships.">Una creación que explora la sensibilidad humana y el afecto. La narrativa dramatúrgica profundiza en elementos como el juego, la caricia y el encuentro, invitando a la audiencia a reflexionar sobre el amor y las relaciones interpersonales.</p>
+<div class="pt-6 border-t border-background/20">
+<p class="font-label-caps text-label-caps text-accent text-[10px]" data-en="ARTISTIC DIRECTION">DIRECCIÓN ARTÍSTICA</p>
+<p class="font-body-md opacity-60 mt-1">Carolina Silvestre</p>
+</div>
+</div>
+<div class="md:col-span-6 md:col-start-7 order-1 md:order-2 grid grid-cols-2 gap-2">
+<div class="row-span-2 overflow-hidden aspect-[3/4]">
+<img class="w-full h-full object-cover image-bw" src="images/love-story/MP6_7373-CR3.jpg" alt="Love Story"/>
+</div>
+<div class="overflow-hidden aspect-square">
+<img class="w-full h-full object-cover image-bw" src="images/love-story/MPS_0556-CR3.jpg" alt="Love Story"/>
+</div>
+<div class="overflow-hidden aspect-square">
+<img class="w-full h-full object-cover image-bw" src="images/love-story/MPS_0591-CR3.jpg" alt="Love Story"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Producciones Section (comentado — sin contenido por ahora) -->
+<!--
+<section class="py-section-gap bg-secondary-container/30 px-page-margin-x" id="producciones">
+</section>
+-->
+<!-- Fundacion Pro Cultura Section -->
+<section class="py-section-gap px-page-margin-x" id="fundacion">
+<div class="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-3">
+<span class="font-label-caps text-label-caps text-accent" data-en="FOUNDATION">FUNDACIÓN</span>
+<p class="font-label-caps text-label-caps opacity-40 mt-4" data-en="PRESIDENT">PRESIDENTA</p>
+</div>
+<div class="md:col-span-7 md:col-start-5 space-y-stack-lg">
+<h2 class="font-headline-lg text-headline-lg leading-tight reveal-text" data-en="Pro Cultura Foundation">Fundación Pro Cultura</h2>
+<div class="space-y-6 text-body-lg font-body-lg text-secondary reveal-text">
+<p data-en="We are a group of friends who unite creators, communities and allies in a shared vision; to elevate the quality of life in the Dominican Republic through innovation and culture.">Somos un grupo de amigos que une creadores, comunidades y aliados en una visión compartida; elevar la calidad de vida en la República Dominicana a través de la innovación y la cultura.</p>
+<p data-en="We believe that art and culture are a transformative force, living identity and a driver of human, social and economic development.">Creemos que el arte y la cultura constituyen una fuerza transformadora, que son identidad viva y motor del desarrollo humano, social y económico.</p>
+<p data-en="We develop sociocultural projects in the Dominican Republic, with a vision that transcends borders, positioning the Dominican Republic as a reference of humanism and cultural innovation.">Desarrollamos proyectos socioculturales en la República Dominicana, con una visión que trasciende fronteras, posicionando la República Dominicana como referente de humanismo e innovación cultural.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- The Gala Night DR Section -->
+<section class="py-section-gap bg-on-surface text-background px-page-margin-x" id="gala">
+<div class="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-3">
+<span class="font-label-caps text-label-caps text-accent" data-en="EVENT">EVENTO</span>
+</div>
+<div class="md:col-span-7 md:col-start-5 space-y-stack-lg">
+<p class="font-label-caps text-label-caps text-accent tracking-[0.2em] reveal-sub" data-en="SYNONYM OF HIGH CULTURE">SINÓNIMO DE ALTA CULTURA</p>
+<h2 class="font-headline-lg text-headline-lg leading-tight reveal-text">The Gala Night DR</h2>
+<p class="font-body-lg opacity-70 reveal-text" data-en="It is the Music and Dance Gala of the Caribbean, a premier cultural event in the Dominican Republic; a unique experience that brings together a multidisciplinary cast of Fine Arts professionals, comprised of artists with extensive local and international careers, under the direction of Carolina Silvestre.">Es la Gala de Música y Danza del Caribe, evento cultural de primer nivel en la República Dominicana; es una experiencia única que reúne un elenco de profesionales multidisciplinarios de las Bellas Artes, conformado por artistas de amplia trayectoria local e internacional, bajo la dirección de Carolina Silvestre.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12 border-t border-background/20 reveal-text">
+<div>
+<span class="font-label-caps text-label-caps text-accent" data-en="FIRST EDITION">PRIMERA EDICIÓN</span>
+<p class="font-headline-sm text-headline-sm mt-2">DOLCE</p>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-accent" data-en="MOTTO">LEMA</span>
+<p class="font-body-lg opacity-80 mt-2" data-en="Culture, legacy and expansion">Cultura, legado y expansión</p>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-accent" data-en="VENUE">LUGAR</span>
+<p class="font-body-lg opacity-80 mt-2">Cap Cana, Ciudad Destino</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Centro de Formacion Section -->
+<section class="py-section-gap bg-secondary-container/30 px-page-margin-x" id="formacion">
+<div class="max-w-[1600px] mx-auto">
+<div class="mb-12">
+<span class="font-label-caps text-label-caps text-accent" data-en="TRAINING CENTER">CENTRO DE FORMACIÓN</span>
+</div>
+<!-- Centro Coreográfico -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 order-2 md:order-1 reveal-text">
+<span class="font-label-caps text-label-caps text-accent">SANTO DOMINGO</span>
+<h3 class="font-headline-md text-headline-md mt-4 mb-6">Centro Coreográfico Santo Domingo Ballet</h3>
+<p class="font-body-lg text-secondary mb-8" data-en="Professional dance company committed to excellence and cultural innovation in the Dominican Republic.">
+                        Compañía profesional de danza comprometida con la excelencia y la innovación cultural en República Dominicana.
+                    </p>
+<a class="inline-block border-b border-on-surface pb-1 font-label-caps text-label-caps hover:text-accent hover:border-accent transition-all" href="https://www.instagram.com/santodomingoballet/" target="_blank" rel="noopener" data-en="VISIT SITE">VISITAR SITIO</a>
+</div>
+<div class="md:col-span-6 md:col-start-7 order-1 md:order-2 flex items-center justify-center">
+<img class="w-2/5 object-contain" style="mix-blend-mode:multiply;" alt="Santo Domingo Ballet" src="images/logo-santo-domingo-ballet.jpg"/>
+</div>
+</div>
+<!-- Punta Cana Ballet -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center mt-12">
+<div class="md:col-span-6 flex items-center justify-center p-12 aspect-[4/5]">
+<img class="max-h-full max-w-full object-contain" style="mix-blend-mode:multiply;" alt="Punta Cana Ballet School" src="images/logo-punta-cana-ballet.avif"/>
+</div>
+<div class="md:col-span-5 md:col-start-8 reveal-text">
+<span class="font-label-caps text-label-caps text-accent">PUNTA CANA</span>
+<h3 class="font-headline-md text-headline-md mt-4 mb-6">Punta Cana Ballet School</h3>
+<p class="font-body-lg text-secondary mb-4" data-en="<em>We are art, for more life.</em>">
+                        <em>Somos arte, por más vida.</em>
+                    </p>
+<p class="font-body-lg text-secondary mb-8" data-en="Dance school located in Punta Cana Village where Carolina Silvestre provides training in ballet, contemporary dance, psychomotricity and physical conditioning — for children, youth and adults.">
+                        Escuela de danza ubicada en Punta Cana Village donde Carolina Silvestre imparte formación en ballet, danza contemporánea, psicomotricidad y condición física — para niños, jóvenes y adultos.
+                    </p>
+<a class="inline-block border-b border-on-surface pb-1 font-label-caps text-label-caps hover:text-accent hover:border-accent transition-all" href="https://www.puntacanaballetschool.com/" target="_blank" rel="noopener" data-en="VISIT SITE">VISITAR SITIO</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Compania Section (comentado — contenido movido a #biografia) -->
+<!--
+<section class="py-section-gap bg-primary text-background px-page-margin-x" id="compania">
+<div class="max-w-[1600px] mx-auto">
+<div class="mb-24">
+<span class="font-label-caps text-label-caps text-accent">COMPAÑÍA</span>
 <h2 class="font-headline-lg text-headline-lg mt-4">Compañías &amp; Escenarios</h2>
 </div>
 <div class="flex flex-col border-t border-background/20">
@@ -250,11 +503,13 @@
 </div>
 </div>
 </section>
-<!-- Education Section -->
-<section class="py-section-gap px-page-margin-x" id="academias">
+-->
+<!-- Centro de Formacion Section (comentado — contenido movido a #biografia) -->
+<!--
+<section class="py-section-gap px-page-margin-x" id="formacion">
 <div class="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter">
 <div class="md:col-span-4">
-<h2 class="font-headline-md text-headline-md sticky top-32">Formación Académica</h2>
+<h2 class="font-headline-md text-headline-md sticky top-32">Centro de Formación</h2>
 </div>
 <div class="md:col-span-7 md:col-start-6 space-y-16">
 <div class="reveal-text">
@@ -285,40 +540,9 @@
 </div>
 </div>
 </section>
-<!-- Projects Section -->
-<section class="py-section-gap bg-secondary-container/30 px-page-margin-x" id="proyectos">
-<div class="max-w-[1600px] mx-auto space-y-section-gap">
-<!-- Project 1 -->
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
-<div class="md:col-span-5 order-2 md:order-1">
-<span class="font-label-caps text-label-caps text-accent">INSTITUCIÓN</span>
-<h3 class="font-headline-md text-headline-md mt-4 mb-6">Centro Coreográfico Santo Domingo Ballet</h3>
-<p class="font-body-lg text-secondary mb-8">
-                        Un espacio dedicado al perfeccionamiento técnico y la exploración creativa, donde la tradición del ballet se encuentra con las nuevas corrientes contemporáneas bajo una metodología rigurosa.
-                    </p>
-<a class="inline-block border-b border-on-surface pb-1 font-label-caps text-label-caps hover:text-accent hover:border-accent transition-all" href="#">DESCUBRIR PROYECTO</a>
-</div>
-<div class="md:col-span-6 md:col-start-7 order-1 md:order-2 overflow-hidden aspect-video">
-<img class="w-full h-full object-cover image-bw parallax-img" alt="Carolina Silvestre en estudio de danza" data-speed="-0.15" src="images/carolina-2.webp"/>
-</div>
-</div>
-<!-- Project 2 -->
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
-<div class="md:col-span-6 overflow-hidden aspect-[4/5]">
-<img class="w-full h-full object-cover image-bw parallax-img" alt="Carolina Silvestre, Punta Cana Ballet" data-speed="0.1" src="images/carolina-3.webp"/>
-</div>
-<div class="md:col-span-5 md:col-start-8">
-<span class="font-label-caps text-label-caps text-accent">DESARROLLO</span>
-<h3 class="font-headline-md text-headline-md mt-4 mb-6">Punta Cana Ballet</h3>
-<p class="font-body-lg text-secondary mb-8">
-                        Extendiendo el alcance de la danza clásica a las zonas de mayor desarrollo del país, fomentando el talento local con estándares internacionales de enseñanza.
-                    </p>
-<a class="inline-block border-b border-on-surface pb-1 font-label-caps text-label-caps hover:text-accent hover:border-accent transition-all" href="https://www.puntacanaballetschool.com/" target="_blank" rel="noopener">VER GALERÍA</a>
-</div>
-</div>
-</div>
-</section>
-<!-- Recognitions -->
+-->
+<!-- Reconocimientos (comentado) -->
+<!--
 <section class="py-section-gap px-page-margin-x border-y border-outline-variant/30">
 <div class="max-w-[1600px] mx-auto text-center space-y-stack-lg">
 <span class="font-label-caps text-label-caps text-accent">RECONOCIMIENTOS</span>
@@ -335,7 +559,9 @@
 </div>
 </div>
 </section>
-<!-- Mosaic Gallery -->
+-->
+<!-- Galería Mosaico (comentada) -->
+<!--
 <section class="py-section-gap px-page-margin-x">
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 auto-rows-[250px] md:auto-rows-[400px]">
 <div class="md:col-span-2 md:row-span-2 overflow-hidden">
@@ -355,23 +581,14 @@
 </div>
 </div>
 </section>
+-->
 <!-- Contact Section -->
 <section class="py-section-gap px-page-margin-x bg-on-surface text-background" id="contacto">
-<div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-stack-lg">
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter items-start">
+<!-- Columna izquierda — título + formulario -->
 <div>
-<h2 class="font-headline-lg text-headline-lg mb-stack-md">Conectemos</h2>
-<p class="font-body-lg opacity-60 mb-12">Para colaboraciones artísticas, dirección de proyectos o consultas académicas.</p>
-<div class="space-y-4">
-<div class="flex gap-6 pt-8">
-<a class="opacity-50 hover:opacity-100 transition-opacity flex items-center gap-2" href="https://www.instagram.com/_carolinasilvestre" target="_blank" rel="noopener noreferrer">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-</a>
-<a class="opacity-50 hover:opacity-100 transition-opacity" href="#" onclick="event.preventDefault(); document.querySelector('#form input[name=name]').focus();">
-<span class="material-symbols-outlined">mail</span>
-</a>
-</div>
-</div>
-</div>
+<h2 class="font-headline-lg text-headline-lg mb-stack-md" data-en="Let's Connect">Conectemos</h2>
+<p class="font-body-lg opacity-60 mb-12" data-en="For inquiries about our services.">Para consulta sobre nuestros servicios.</p>
 <div id="form-success" class="hidden text-center py-16 space-y-4">
 <span class="material-symbols-outlined text-accent" style="font-size:3rem;">check_circle</span>
 <p class="font-headline-sm text-headline-sm">Mensaje enviado</p>
@@ -382,26 +599,42 @@
 <input type="hidden" name="subject" value="Nueva consulta — carolinasilvestre.com"/>
 <input type="hidden" name="from_name" value="Portfolio Carolina Silvestre"/>
 <div class="relative">
-<label class="font-label-caps text-label-caps text-accent">NOMBRE</label>
-<input class="w-full bg-transparent border-0 border-b border-background/20 py-4 focus:ring-0 focus:border-accent transition-colors placeholder:opacity-50" placeholder="Su nombre completo" type="text" name="name" required/>
+<label class="font-label-caps text-label-caps text-accent" data-en="NAME">NOMBRE</label>
+<input class="w-full bg-transparent border-0 border-b border-background/20 py-4 focus:ring-0 focus:border-accent transition-colors placeholder:opacity-50" placeholder="Su nombre completo" type="text" name="name" required data-en-placeholder="Your full name"/>
 </div>
 <div class="relative">
-<label class="font-label-caps text-label-caps text-accent">EMAIL</label>
-<input class="w-full bg-transparent border-0 border-b border-background/20 py-4 focus:ring-0 focus:border-accent transition-colors placeholder:opacity-50" placeholder="correo@ejemplo.com" type="email" name="email" required/>
+<label class="font-label-caps text-label-caps text-accent" data-en="EMAIL">EMAIL</label>
+<input class="w-full bg-transparent border-0 border-b border-background/20 py-4 focus:ring-0 focus:border-accent transition-colors placeholder:opacity-50" placeholder="correo@ejemplo.com" type="email" name="email" required data-en-placeholder="email@example.com"/>
 </div>
 <div class="relative">
-<label class="font-label-caps text-label-caps text-accent">MENSAJE</label>
-<textarea class="w-full bg-transparent border-0 border-b border-background/20 py-4 focus:ring-0 focus:border-accent transition-colors placeholder:opacity-50" placeholder="Su mensaje aquí..." rows="4" name="message" required></textarea>
+<label class="font-label-caps text-label-caps text-accent" data-en="MESSAGE">MENSAJE</label>
+<textarea class="w-full bg-transparent border-0 border-b border-background/20 py-4 focus:ring-0 focus:border-accent transition-colors placeholder:opacity-50" placeholder="Su mensaje aquí..." rows="4" name="message" required data-en-placeholder="Your message here..."></textarea>
 </div>
-<button class="w-full py-6 bg-accent text-primary font-label-caps text-label-caps hover:bg-white transition-colors" type="submit">ENVIAR CONSULTA</button>
+<button class="w-full py-6 bg-accent text-primary font-label-caps text-label-caps hover:bg-white transition-colors" type="submit" data-en="SEND INQUIRY">ENVIAR CONSULTA</button>
 </form>
+</div>
+<!-- Columna derecha — contacto -->
+<div class="md:pl-32 md:pt-64 grid grid-cols-2 gap-8">
+<div>
+<p class="font-label-caps text-label-caps text-accent text-[10px] mb-2" data-en="PHONE">TELÉFONO</p>
+<a class="font-body-lg text-body-lg opacity-60 hover:opacity-100 transition-opacity" href="tel:+18299857466">+1 (829) 985 74 66</a>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-accent text-[10px] mb-2">INSTAGRAM</p>
+<a class="opacity-60 hover:opacity-100 transition-opacity inline-block" href="https://www.instagram.com/_carolinasilvestre" target="_blank" rel="noopener noreferrer">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+</a>
+</div>
+</div>
 </div>
 </section>
 <!-- Footer -->
-<footer class="py-12 px-page-margin-x border-t border-outline-variant/10 text-center">
-<p class="font-label-caps text-[10px] tracking-[0.3em] opacity-40">
+<footer class="py-12 px-page-margin-x border-t border-outline-variant/10">
+<div class="flex flex-col md:flex-row items-center justify-between gap-6">
+<p class="font-label-caps text-[10px] tracking-[0.3em] opacity-40" data-en="© 2026 CAROLINA SILVESTRE · ALL RIGHTS RESERVED · DESIGN BY <a href=&quot;https://perxist.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; class=&quot;hover:opacity-100 transition-opacity&quot;>PERXIST SRL</a>">
             © 2026 CAROLINA SILVESTRE · TODOS LOS DERECHOS RESERVADOS · DESIGN BY <a href="https://perxist.com" target="_blank" rel="noopener" class="hover:opacity-100 transition-opacity">PERXIST SRL</a>
         </p>
+</div>
 </footer>
 <script>
         // Mobile Menu
@@ -515,5 +748,58 @@
                 submitBtn.disabled = false;
             }
         });
+
+        // Video autoplay on scroll
+        const videoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const video = entry.target;
+                if (entry.isIntersecting) {
+                    video.play().catch(() => {});
+                } else {
+                    video.pause();
+                }
+            });
+        }, { threshold: 0.4 });
+
+        document.querySelectorAll('.autoplay-video').forEach(v => videoObserver.observe(v));
+
+        // Language toggle
+        (function() {
+            let lang = 'es';
+            const btn = document.getElementById('lang-toggle');
+            const btnMobile = document.getElementById('lang-toggle-mobile');
+            if (!btn && !btnMobile) return;
+
+            function applyLang(newLang) {
+                lang = newLang;
+                const labelEs = lang === 'es' ? 'EN' : 'ES';
+                if (btn) btn.textContent = labelEs;
+                if (btnMobile) btnMobile.textContent = labelEs;
+                document.querySelectorAll('[data-en]').forEach(el => {
+                    if (lang === 'en') {
+                        if (!el.hasAttribute('data-es')) el.setAttribute('data-es', el.innerHTML);
+                        el.innerHTML = el.getAttribute('data-en');
+                    } else {
+                        el.innerHTML = el.getAttribute('data-es');
+                    }
+                });
+                document.querySelectorAll('[data-en-placeholder]').forEach(el => {
+                    if (lang === 'en') {
+                        if (!el.hasAttribute('data-es-placeholder')) el.setAttribute('data-es-placeholder', el.placeholder);
+                        el.placeholder = el.getAttribute('data-en-placeholder');
+                    } else {
+                        el.placeholder = el.getAttribute('data-es-placeholder') || el.placeholder;
+                    }
+                });
+                document.documentElement.lang = lang;
+            }
+
+            if (btn) btn.addEventListener('click', () => applyLang(lang === 'es' ? 'en' : 'es'));
+            if (btnMobile) btnMobile.addEventListener('click', () => applyLang(lang === 'es' ? 'en' : 'es'));
+
+            // Auto-detect browser language
+            const browserLang = (navigator.language || navigator.userLanguage || 'es').toLowerCase();
+            if (browserLang.startsWith('en')) applyLang('en');
+        })();
     </script>
 </body></html>
