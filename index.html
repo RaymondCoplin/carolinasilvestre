@@ -48,7 +48,7 @@
 <!-- Resource hints -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link rel="preconnect" href="https://cdnjs.cloudflare.com"/>
+<link rel="preconnect" href="https://cdn.jsdelivr.net"/>
 <link rel="preconnect" href="https://www.googletagmanager.com"/>
 <link rel="dns-prefetch" href="https://api.web3forms.com"/>
 <!-- Open Graph — Facebook, WhatsApp, LinkedIn, iMessage -->
@@ -91,11 +91,10 @@
 }
 </script>
 <!-- Font Links -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&amp;family=Manrope:wght@300;400;600&amp;family=Dancing+Script:wght@400;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&amp;family=Manrope:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com/3.4.17?plugins=forms@0.5.10,container-queries@0.1.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js" defer></script>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -146,9 +145,6 @@
             background-color: #F5F1EA;
             color: #0A0A0A;
             overflow-x: hidden;
-        }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
         }
         .split-parent { overflow: hidden; }
         .split-child { display: block; }
@@ -211,7 +207,8 @@
 <button id="lang-toggle" class="font-label-caps text-label-caps text-secondary hover:text-on-surface transition-colors ml-4">EN</button>
 </nav>
 <button id="menu-toggle" class="md:hidden p-1" aria-label="Abrir menú" onclick="toggleMobileMenu()">
-<span id="menu-icon" class="material-symbols-outlined" style="font-size: 2rem;">menu</span>
+<svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+<svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="hidden"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
 </button>
 </header>
 <!-- Mobile Menu Overlay -->
@@ -243,7 +240,7 @@
 </div>
 </div>
 <div class="mt-24 flex justify-center animate-bounce opacity-50">
-<span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"/></svg>
 </div>
 </section>
 <!-- Producciones Section -->
@@ -305,13 +302,13 @@
 </div>
 <div class="md:col-span-6 md:col-start-7 order-1 md:order-2 grid grid-cols-2 gap-2">
 <div class="row-span-2 overflow-hidden aspect-[3/4]">
-<img class="w-full h-full object-cover image-bw" src="images/love-story/MP6_7373-CR3.jpg" alt="Love Story" loading="lazy"/>
+<img class="w-full h-full object-cover image-bw" src="images/love-story/MP6_7373-CR3.webp" alt="Love Story" loading="lazy"/>
 </div>
 <div class="overflow-hidden aspect-square">
-<img class="w-full h-full object-cover image-bw" src="images/love-story/MPS_0556-CR3.jpg" alt="Love Story" loading="lazy"/>
+<img class="w-full h-full object-cover image-bw" src="images/love-story/MPS_0556-CR3.webp" alt="Love Story" loading="lazy"/>
 </div>
 <div class="overflow-hidden aspect-square">
-<img class="w-full h-full object-cover image-bw" src="images/love-story/MPS_0591-CR3.jpg" alt="Love Story" loading="lazy"/>
+<img class="w-full h-full object-cover image-bw" src="images/love-story/MPS_0591-CR3.webp" alt="Love Story" loading="lazy"/>
 </div>
 </div>
 </div>
@@ -415,13 +412,13 @@
 <a class="inline-block border-b border-on-surface pb-1 font-label-caps text-label-caps hover:text-accent hover:border-accent transition-all" href="https://www.instagram.com/santodomingoballet/" target="_blank" rel="noopener" data-en="VISIT SITE">VISITAR SITIO</a>
 </div>
 <div class="md:col-span-6 md:col-start-7 order-1 md:order-2 flex items-center justify-center">
-<img class="w-2/5 object-contain" style="mix-blend-mode:multiply;" alt="Santo Domingo Ballet" src="images/logo-santo-domingo-ballet.jpg" loading="lazy"/>
+<img class="w-2/5 object-contain" style="mix-blend-mode:multiply;" alt="Santo Domingo Ballet" src="images/logo-santo-domingo-ballet.jpg" loading="lazy" width="150" height="150"/>
 </div>
 </div>
 <!-- Punta Cana Ballet -->
 <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center mt-12">
 <div class="md:col-span-6 flex items-center justify-center py-8 md:py-12">
-<img class="max-h-full max-w-full object-contain" style="mix-blend-mode:multiply;" alt="Punta Cana Ballet" src="images/logo-punta-cana-ballet.jpeg" loading="lazy"/>
+<img class="max-h-full max-w-full object-contain" style="mix-blend-mode:multiply;" alt="Punta Cana Ballet" src="images/logo-punta-cana-ballet.jpeg" loading="lazy" width="1600" height="900"/>
 </div>
 <div class="md:col-span-5 md:col-start-8 reveal-text">
 <span class="font-label-caps text-label-caps text-accent" data-en="PERSONALIZED TRAINING CENTER">CENTRO DE FORMACIÓN PERSONALIZADO</span>
@@ -473,7 +470,7 @@
 </div>
 <div class="hidden md:block md:col-span-3 md:col-start-10">
 <div class="overflow-hidden rounded-xl sticky top-32">
-<img class="w-full object-cover image-bw" src="images/carolina-5.webp" alt="Carolina Silvestre" loading="lazy"/>
+<img class="w-full object-cover image-bw" src="images/carolina-5.webp" alt="Carolina Silvestre" loading="lazy" width="1067" height="1600"/>
 </div>
 </div>
 </div>
@@ -590,7 +587,7 @@
 <img class="w-full h-full object-cover object-top image-bw transition-transform duration-700 hover:scale-110" alt="Carolina Silvestre" src="images/carolina-4.webp"/>
 </div>
 <div class="md:col-span-2 overflow-hidden">
-<img class="w-full h-full object-cover object-top image-bw transition-transform duration-700 hover:scale-110" alt="Carolina Silvestre" src="images/carolina-5.webp"/>
+<img class="w-full h-full object-cover object-top image-bw transition-transform duration-700 hover:scale-110" alt="Carolina Silvestre" src="images/carolina-5.webp" width="1067" height="1600"/>
 </div>
 </div>
 </section>
@@ -603,7 +600,7 @@
 <h2 class="font-headline-lg text-headline-lg mb-stack-md text-white" data-en="Let's Connect">Conectemos</h2>
 <p class="font-body-lg opacity-60 mb-12" style="font-family:'Manrope',sans-serif;font-size:18px;" data-en="For inquiries about our services.">Para consulta sobre nuestros servicios.</p>
 <div id="form-success" class="hidden text-center py-16 space-y-4" role="alert">
-<span class="material-symbols-outlined text-accent" style="font-size:3rem;">check_circle</span>
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
 <p class="font-headline-sm text-headline-sm" data-en="Message sent">Mensaje enviado</p>
 <p class="font-body-md opacity-60" data-en="Thank you for writing. I'll be in touch soon.">Gracias por escribir. Estaré en contacto pronto.</p>
 </div>
@@ -651,17 +648,21 @@
         // Mobile Menu
         function toggleMobileMenu() {
             const menu = document.getElementById('mobile-menu');
-            const icon = document.getElementById('menu-icon');
+            const iconOpen = document.getElementById('menu-icon-open');
+            const iconClose = document.getElementById('menu-icon-close');
             const isOpen = menu.classList.contains('open');
             menu.classList.toggle('open');
-            icon.textContent = isOpen ? 'menu' : 'close';
+            iconOpen.classList.toggle('hidden', !isOpen);
+            iconClose.classList.toggle('hidden', isOpen);
             document.body.style.overflow = isOpen ? '' : 'hidden';
         }
         function closeMobileMenu() {
             const menu = document.getElementById('mobile-menu');
-            const icon = document.getElementById('menu-icon');
+            const iconOpen = document.getElementById('menu-icon-open');
+            const iconClose = document.getElementById('menu-icon-close');
             menu.classList.remove('open');
-            icon.textContent = 'menu';
+            iconOpen.classList.remove('hidden');
+            iconClose.classList.add('hidden');
             document.body.style.overflow = '';
         }
 
