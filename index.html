@@ -93,54 +93,9 @@
 <!-- Font Links -->
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Manrope:wght@300;400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
 <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Manrope:wght@300;400;600&display=swap" rel="stylesheet"/></noscript>
-<script src="https://cdn.tailwindcss.com/3.4.17?plugins=forms@0.5.10,container-queries@0.1.1"></script>
+<link rel="stylesheet" href="style.min.css"/>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js" defer></script>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "primary": "#000000",
-                        "secondary": "#625e57",
-                        "background": "#F5F1EA", // Override to requested background
-                        "accent": "#A8895C",
-                        "surface": "#F5F1EA",
-                        "on-surface": "#0A0A0A",
-                        "outline-variant": "rgba(10,10,10,0.1)"
-                    },
-                    "spacing": {
-                        "stack-sm": "0.5rem",
-                        "stack-lg": "3rem",
-                        "page-margin-x": "5vw",
-                        "section-gap": "12rem",
-                        "gutter": "2rem",
-                        "stack-md": "1.5rem",
-                        "page-margin-y": "4rem"
-                    },
-                    "fontFamily": {
-                        "headline-lg": ["Playfair Display"],
-                        "headline-sm": ["Playfair Display"],
-                        "headline-md": ["Playfair Display"],
-                        "body-lg": ["Manrope"],
-                        "body-md": ["Manrope"],
-                        "label-caps": ["Manrope"],
-                        "display-hero": ["Playfair Display"]
-                    },
-                    "fontSize": {
-                        "headline-lg": ["4.5rem", {"lineHeight": "1.1", "fontWeight": "400"}],
-                        "headline-sm": ["1.5rem", {"lineHeight": "1.4", "fontWeight": "500"}],
-                        "headline-md": ["3rem", {"lineHeight": "1.2", "fontWeight": "400"}],
-                        "body-lg": ["1.125rem", {"lineHeight": "1.6", "fontWeight": "300"}],
-                        "body-md": ["1rem", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "label-caps": ["0.75rem", {"lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "600"}],
-                        "display-hero": ["clamp(4rem, 12vw, 11rem)", {"lineHeight": "0.9", "letterSpacing": "-0.03em", "fontWeight": "400"}]
-                    }
-                }
-            }
-        }
-    </script>
 <style>
         body {
             background-color: #F5F1EA;
